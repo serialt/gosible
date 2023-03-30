@@ -34,9 +34,9 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 
-	"github.com/windvalley/gossh/internal/pkg/configflags"
-	"github.com/windvalley/gossh/pkg/log"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/pkg/configflags"
+	"github.com/cimau/gossh/pkg/log"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 // Cmd represents the vault command

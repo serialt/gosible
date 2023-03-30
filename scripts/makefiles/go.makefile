@@ -1,10 +1,10 @@
 # go.makefile
 
 # Supports Go versions.
-GO_SUPPORTED_VERSIONS ?= 1.13|1.14|1.15|1.16|1.17
+GO_SUPPORTED_VERSIONS ?= 1.13|1.14|1.15|1.16|1.17|1.18|1.19|1.20|1.21|1.22
 
 # The project package name.
-ROOT_PACKAGE = github.com/windvalley/gossh
+ROOT_PACKAGE = github.com/cimau/gossh
 # The project version package name.
 #VERSION_PACKAGE = ${ROOT_PACKAGE}/pkg/version
 VERSION_PACKAGE = github.com/go-project-pkg/version

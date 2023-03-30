@@ -27,9 +27,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/windvalley/gossh/internal/pkg/configflags"
-	"github.com/windvalley/gossh/internal/pkg/sshtask"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/pkg/configflags"
+	"github.com/cimau/gossh/internal/pkg/sshtask"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 var (
@@ -52,7 +52,7 @@ Execute a local shell script on target hosts.`,
   # Remove the copied 'foo.sh' on the target hosts after execution.
   $ gossh script host[1-3] -i hosts.txt -e foo.sh -k -r
 
-  Find more examples at: https://github.com/windvalley/gossh/blob/main/docs/script.md`,
+  Find more examples at: https://github.com/cimau/gossh/blob/main/docs/script.md`,
 	PreRun: func(cmd *cobra.Command, args []string) {
 		if errs := configflags.Config.Validate(); len(errs) != 0 {
 			util.CheckErr(errs)

@@ -28,7 +28,7 @@ import (
 	"github.com/go-project-pkg/version"
 	"github.com/spf13/cobra"
 
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 // versionCmd represents the version command

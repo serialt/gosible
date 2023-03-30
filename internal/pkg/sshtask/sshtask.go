@@ -38,13 +38,13 @@ import (
 	"golang.org/x/crypto/ssh/agent"
 	"golang.org/x/term"
 
-	"github.com/windvalley/gossh/internal/cmd/vault"
-	"github.com/windvalley/gossh/internal/pkg/aes"
-	"github.com/windvalley/gossh/internal/pkg/configflags"
-	"github.com/windvalley/gossh/pkg/batchssh"
-	"github.com/windvalley/gossh/pkg/inventory"
-	"github.com/windvalley/gossh/pkg/log"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/cmd/vault"
+	"github.com/cimau/gossh/internal/pkg/aes"
+	"github.com/cimau/gossh/internal/pkg/configflags"
+	"github.com/cimau/gossh/pkg/batchssh"
+	"github.com/cimau/gossh/pkg/inventory"
+	"github.com/cimau/gossh/pkg/log"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 var (
@@ -235,8 +235,9 @@ func (t *Task) RunSSH(host *batchssh.Host) (string, error) {
 	}
 }
 
-//nolint:gocyclo
 // BatchRun ...
+//
+//nolint:gocyclo
 func (t *Task) BatchRun() {
 	timeNow := time.Now()
 

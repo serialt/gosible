@@ -28,7 +28,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 //nolint:gosec

@@ -27,7 +27,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 // viewCmd represents the vault view command

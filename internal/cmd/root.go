@@ -28,10 +28,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/windvalley/gossh/internal/cmd/vault"
-	"github.com/windvalley/gossh/internal/pkg/configflags"
-	"github.com/windvalley/gossh/pkg/log"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/cmd/vault"
+	"github.com/cimau/gossh/internal/pkg/configflags"
+	"github.com/cimau/gossh/pkg/log"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 const cfgFileFlag = "config"
@@ -46,7 +46,7 @@ var rootCmd = &cobra.Command{
 Gossh is a high-performance and high-concurrency ssh tool.
 It can efficiently manage tens of thousands of Linux server clusters.
 
-Find more information at: https://github.com/windvalley/gossh`,
+Find more information at: https://github.com/cimau/gossh`,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

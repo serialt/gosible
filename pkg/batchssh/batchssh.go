@@ -39,8 +39,8 @@ import (
 	"github.com/pkg/sftp"
 	"golang.org/x/crypto/ssh"
 
-	"github.com/windvalley/gossh/pkg/log"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/pkg/log"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 const (
@@ -331,8 +331,9 @@ func (c *Client) PushFiles(
 	return fmt.Sprintf("'%s' %s been copied to '%s'", strings.Join(srcFiles, ","), hasOrHave, dstDir), nil
 }
 
-//nolint:funlen,gocyclo
 // FetchFiles from remote host.
+//
+//nolint:funlen,gocyclo
 func (c *Client) FetchFiles(
 	host *Host,
 	srcFiles []string,

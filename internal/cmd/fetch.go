@@ -27,9 +27,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/windvalley/gossh/internal/pkg/configflags"
-	"github.com/windvalley/gossh/internal/pkg/sshtask"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/pkg/configflags"
+	"github.com/cimau/gossh/internal/pkg/sshtask"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 var (
@@ -51,7 +51,7 @@ Copy files and dirs from target hosts to local.`,
   # Copy files and dirs from target hosts to local dir /tmp/backup/.
   $ gossh fetch host[1-2] -f /path1/foo.txt,/path2/bar/ -d /tmp/backup
 
-  Find more examples at: https://github.com/windvalley/gossh/blob/main/docs/fetch.md`,
+  Find more examples at: https://github.com/cimau/gossh/blob/main/docs/fetch.md`,
 	PreRun: func(cmd *cobra.Command, args []string) {
 		if errs := configflags.Config.Validate(); len(errs) != 0 {
 			util.CheckErr(errs)

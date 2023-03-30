@@ -26,8 +26,8 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"github.com/windvalley/gossh/pkg/aes"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/pkg/aes"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 const (

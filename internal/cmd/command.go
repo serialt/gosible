@@ -25,9 +25,9 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/windvalley/gossh/internal/pkg/configflags"
-	"github.com/windvalley/gossh/internal/pkg/sshtask"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/pkg/configflags"
+	"github.com/cimau/gossh/internal/pkg/sshtask"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 var shellCommand string
@@ -39,7 +39,7 @@ const commandCmdExamples = `
   # Use sudo as root to execute command on target hosts.
   $ gossh command host[1-2] -e "uptime" -u zhangsan -s
 
-  Find more examples at: https://github.com/windvalley/gossh/blob/main/docs/command.md`
+  Find more examples at: https://github.com/cimau/gossh/blob/main/docs/command.md`
 
 // commandCmd represents the 'command' command
 var commandCmd = &cobra.Command{

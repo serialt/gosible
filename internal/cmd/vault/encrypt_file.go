@@ -30,14 +30,15 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/windvalley/gossh/internal/pkg/aes"
-	"github.com/windvalley/gossh/pkg/util"
+	"github.com/cimau/gossh/internal/pkg/aes"
+	"github.com/cimau/gossh/pkg/util"
 )
 
 var outputFile string
 
-//nolint:dupl
 // encryptFileCmd represents the vault encrypt-file command
+//
+//nolint:dupl
 var encryptFileCmd = &cobra.Command{
 	Use:   "encrypt-file FILENAME",
 	Short: "Encrypt a file",
