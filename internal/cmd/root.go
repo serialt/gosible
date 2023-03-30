@@ -61,7 +61,7 @@ func init() {
 	vault.SetHelpFunc(rootCmd)
 
 	util.CobraAddSubCommandInOrder(rootCmd,
-		commandCmd,
+		cmdCmd,
 		scriptCmd,
 		pushCmd,
 		fetchCmd,

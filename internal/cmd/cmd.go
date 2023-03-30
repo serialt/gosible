@@ -34,16 +34,16 @@ var shellCommand string
 
 const commandCmdExamples = `
   # Execute command 'uptime' on target hosts.
-  $ gossh command host1 host2 -e "uptime" -u zhangsan -k
+  $ gossh cmd host1 host2 -e "uptime" -u zhangsan -k
 
   # Use sudo as root to execute command on target hosts.
-  $ gossh command host[1-2] -e "uptime" -u zhangsan -s
+  $ gossh cmd host[1-2] -e "uptime" -u zhangsan -s
 
   Find more examples at: https://github.com/serialt/gosible/blob/main/docs/command.md`
 
-// commandCmd represents the 'command' command
-var commandCmd = &cobra.Command{
-	Use:   "command [HOST...]",
+// cmdCmd represents the 'command' command
+var cmdCmd = &cobra.Command{
+	Use:   "cmd [HOST...]",
 	Short: "Execute commands on target hosts",
 	Long: `
 Execute commands on target hosts.`,
@@ -66,7 +66,7 @@ Execute commands on target hosts.`,
 }
 
 func init() {
-	commandCmd.Flags().StringVarP(
+	cmdCmd.Flags().StringVarP(
 		&shellCommand,
 		"execute",
 		"e",
