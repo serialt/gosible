@@ -25,7 +25,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/cimau/gossh/internal/cmd"
+	"github.com/serialt/gosible/internal/cmd"
 )
 
 func main() {

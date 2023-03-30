@@ -38,13 +38,13 @@ import (
 	"golang.org/x/crypto/ssh/agent"
 	"golang.org/x/term"
 
-	"github.com/cimau/gossh/internal/cmd/vault"
-	"github.com/cimau/gossh/internal/pkg/aes"
-	"github.com/cimau/gossh/internal/pkg/configflags"
-	"github.com/cimau/gossh/pkg/batchssh"
-	"github.com/cimau/gossh/pkg/inventory"
-	"github.com/cimau/gossh/pkg/log"
-	"github.com/cimau/gossh/pkg/util"
+	"github.com/serialt/gosible/internal/cmd/vault"
+	"github.com/serialt/gosible/internal/pkg/aes"
+	"github.com/serialt/gosible/internal/pkg/configflags"
+	"github.com/serialt/gosible/pkg/batchssh"
+	"github.com/serialt/gosible/pkg/inventory"
+	"github.com/serialt/gosible/pkg/log"
+	"github.com/serialt/gosible/pkg/util"
 )
 
 var (

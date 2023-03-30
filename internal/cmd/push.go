@@ -32,9 +32,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cimau/gossh/internal/pkg/configflags"
-	"github.com/cimau/gossh/internal/pkg/sshtask"
-	"github.com/cimau/gossh/pkg/util"
+	"github.com/serialt/gosible/internal/pkg/configflags"
+	"github.com/serialt/gosible/internal/pkg/sshtask"
+	"github.com/serialt/gosible/pkg/util"
 )
 
 var (
@@ -56,7 +56,7 @@ Copy local files and dirs to target hosts.`,
   # Copy local files and dirs to /home/user/ of the target hosts. 
   $ gossh push host[1-2] -f /path/foo.txt,/path/bar/ -d /home/user -k
 
-  Find more examples at: https://github.com/cimau/gossh/blob/main/docs/push.md`,
+  Find more examples at: https://github.com/serialt/gosible/blob/main/docs/push.md`,
 	PreRun: func(cmd *cobra.Command, args []string) {
 		if errs := configflags.Config.Validate(); len(errs) != 0 {
 			util.CheckErr(errs)

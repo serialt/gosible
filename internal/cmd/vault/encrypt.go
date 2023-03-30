@@ -27,8 +27,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cimau/gossh/internal/pkg/aes"
-	"github.com/cimau/gossh/pkg/util"
+	"github.com/serialt/gosible/internal/pkg/aes"
+	"github.com/serialt/gosible/pkg/util"
 )
 
 // encryptCmd represents the vault encrypt command

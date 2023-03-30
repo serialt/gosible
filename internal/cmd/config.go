@@ -28,8 +28,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cimau/gossh/internal/pkg/configflags"
-	"github.com/cimau/gossh/pkg/util"
+	"github.com/serialt/gosible/internal/pkg/configflags"
+	"github.com/serialt/gosible/pkg/util"
 )
 
 const configTemplate = `auth:

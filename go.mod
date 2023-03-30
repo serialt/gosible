@@ -1,4 +1,4 @@
-module github.com/cimau/gossh
+module github.com/serialt/gosible
 
 go 1.20
 

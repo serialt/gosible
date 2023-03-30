@@ -1,14 +1,14 @@
 # GoSSH
 
 [![Language](https://img.shields.io/badge/Language-Go-blue.svg)](https://go.dev)
-[![Github Workflow Status](https://img.shields.io/github/actions/workflow/status/windvalley/gossh/gosshci.yaml?branch=main)](https://github.com/cimau/gossh/actions/workflows/gosshci.yaml)
+[![Github Workflow Status](https://img.shields.io/github/actions/workflow/status/windvalley/gossh/gosshci.yaml?branch=main)](https://github.com/serialt/gosible/actions/workflows/gosshci.yaml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=windvalley_gossh&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=windvalley_gossh)
-[![Version](https://img.shields.io/github/v/release/windvalley/gossh?include_prereleases)](https://github.com/cimau/gossh/releases)
+[![Version](https://img.shields.io/github/v/release/windvalley/gossh?include_prereleases)](https://github.com/serialt/gosible/releases)
 [![LICENSE](https://img.shields.io/github/license/windvalley/gossh)](LICENSE) <br>
 ![Page Views](https://views.whatilearened.today/views/github/windvalley/gossh.svg)
 [![Traffic Clones Total](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.sre.im%2Fv1%2Fgithub%2Ftraffic%2Fclones%2Ftotal%3Fgit_user%3Dwindvalley%26git_repo%3Dgossh%26type%3Dcount%26label%3Dclones-total)](https://github.com/windvalley/traffic-clones-api)
 [![Traffic Clones Uniques](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.sre.im%2Fv1%2Fgithub%2Ftraffic%2Fclones%2Ftotal%3Fgit_user%3Dwindvalley%26git_repo%3Dgossh%26type%3Duniques%26label%3Dclones-uniques)](https://github.com/windvalley/traffic-clones-api)
-[![Release Download Total](https://img.shields.io/github/downloads/windvalley/gossh/total)](https://github.com/cimau/gossh/releases)
+[![Release Download Total](https://img.shields.io/github/downloads/windvalley/gossh/total)](https://github.com/serialt/gosible/releases)
 
 Gossh is a high-performance and high-concurrency ssh tool written in Go.
 It can efficiently manage tens of thousands of Linux server clusters.
@@ -105,12 +105,12 @@ Feel free to open a new issue if you have any issues, questions or suggestions a
 
 ## 🛠 Installation
 
-Prebuilt binaries for macOS and Linux can be downloaded from the [GitHub releases page](https://github.com/cimau/gossh/releases).
+Prebuilt binaries for macOS and Linux can be downloaded from the [GitHub releases page](https://github.com/serialt/gosible/releases).
 
 Also you can install `gossh` by compiling:
 
 ```sh
-$ git clone --depth 1 https://github.com/cimau/gossh
+$ git clone --depth 1 https://github.com/serialt/gosible
 
 $ cd gossh
 
@@ -126,7 +126,7 @@ $ gossh -h
 Gossh is a high-performance and high-concurrency ssh tool.
 It can efficiently manage tens of thousands of Linux server clusters.
 
-Find more information at: https://github.com/cimau/gossh
+Find more information at: https://github.com/serialt/gosible
 
 Usage:
   gossh [command]
@@ -239,7 +239,7 @@ sys     0m0.592s
 
 I actively welcome your pull requests, please follow the steps below:
 
-1. Open a new issue at [gossh/issues](https://github.com/cimau/gossh/issues).
+1. Open a new issue at [gossh/issues](https://github.com/serialt/gosible/issues).
 
 2. Fork the repo and create your branch from `main`.
 

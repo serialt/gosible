@@ -76,7 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Optimize the priority of the ssh authentication methods.
   Old: `password > pubkey > ssh-agent`,
   New: `ssh-agent > pubkey > password`.
-  For details at ([#31](https://github.com/cimau/gossh/issues/31)).
+  For details at ([#31](https://github.com/serialt/gosible/issues/31)).
 
 - Optimize description of flag `--timeout.command`.
 
@@ -92,7 +92,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add feature that getting vault password from an executable file.
-  For details at ([#28](https://github.com/cimau/gossh/issues/28)).
+  For details at ([#28](https://github.com/serialt/gosible/issues/28)).
 
 ### Changed
 
@@ -141,7 +141,7 @@ dbserver
 webserver
 ```
 
-For details at ([#29](https://github.com/cimau/gossh/issues/29)).
+For details at ([#29](https://github.com/serialt/gosible/issues/29)).
 
 ### Changed
 
@@ -161,17 +161,17 @@ alias_name_node2 host=192.168.33.12 port=22 user=vagrant password=vagrant keys=~
 node3.sre.im user=vagrant password=GOSSH-AES256:9cfe499133b69a6c7fc62b5b6ba72d3d8dfb4d0e7987170a40c5d50bb5d71e19
 ```
 
-For details at ([#27](https://github.com/cimau/gossh/issues/27)).
+For details at ([#27](https://github.com/serialt/gosible/issues/27)).
 
 ## [1.7.0]
 
 ### Added
 
 - `gossh vault encrypt`: adding the feature of obtaining plaintext from promt.
-  For details at ([#24](https://github.com/cimau/gossh/issues/24)).
+  For details at ([#24](https://github.com/serialt/gosible/issues/24)).
 
 - Add following new commands for subcommand `vault`,
-  for details at ([#25](https://github.com/cimau/gossh/issues/25)).
+  for details at ([#25](https://github.com/serialt/gosible/issues/25)).
   - `encrypt-file`: Encrypt a file
   - `decrypt-file`: Decrypt vault encrypted file
   - `view`: View vault encrypted file
@@ -192,7 +192,7 @@ For details at ([#27](https://github.com/cimau/gossh/issues/27)).
 ### Changed
 
 - Hide global flags that are not used by some subcommands
-  ([#21](https://github.com/cimau/gossh/issues/21)).
+  ([#21](https://github.com/serialt/gosible/issues/21)).
 
   - Hide following global flags for subcommand `config`.
 
@@ -249,7 +249,7 @@ For details at ([#27](https://github.com/cimau/gossh/issues/27)).
   ```
 
 - Optimize the order of flags to make them more friendly
-  ([#23](https://github.com/cimau/gossh/issues/23)).
+  ([#23](https://github.com/serialt/gosible/issues/23)).
 
 - Password prompt for login user changed from `Password` to `Password for zhangsan`.
 
@@ -258,14 +258,14 @@ For details at ([#27](https://github.com/cimau/gossh/issues/27)).
 ### Fixed
 
 - Fix default `completion` command description is inconsistent with others
-  ([#22](https://github.com/cimau/gossh/issues/22)).
+  ([#22](https://github.com/serialt/gosible/issues/22)).
 
 ## [1.5.0]
 
 ### Added
 
 - Add subcommand `vault` that helps you encrypt/decrypt confidential information without compromising security.
-  ([#14](https://github.com/cimau/gossh/issues/14)).
+  ([#14](https://github.com/serialt/gosible/issues/14)).
 
 ```sh
 $ gossh vault -h
@@ -306,7 +306,7 @@ Global Flags:
 
 ### Added
 
-- Subcommand `fetch` supports using flag `-s/--run.sudo` to copy files and directories to which the user does not have access permission ([#20](https://github.com/cimau/gossh/issues/20)).
+- Subcommand `fetch` supports using flag `-s/--run.sudo` to copy files and directories to which the user does not have access permission ([#20](https://github.com/serialt/gosible/issues/20)).
 
 - Add more examples for subcommand `fetch`.
 
@@ -320,13 +320,13 @@ Global Flags:
 
 ### Added
 
-- Add flag `-t/--tmp-dir` for subcommand `fetch`. For details at [#19](https://github.com/cimau/gossh/issues/19).
+- Add flag `-t/--tmp-dir` for subcommand `fetch`. For details at [#19](https://github.com/serialt/gosible/issues/19).
 
 ## [1.4.0]
 
 ### Added
 
-- Add subcommand `fetch` for copying files or dirs from target hosts to local. For details at [#18](https://github.com/cimau/gossh/issues/18).
+- Add subcommand `fetch` for copying files or dirs from target hosts to local. For details at [#18](https://github.com/serialt/gosible/issues/18).
 
 ### Changed
 
@@ -336,19 +336,19 @@ Global Flags:
 
 ### Fixed
 
-- Fix sudo password prompt output not be trimmed as expected ([#15](https://github.com/cimau/gossh/issues/15)).
+- Fix sudo password prompt output not be trimmed as expected ([#15](https://github.com/serialt/gosible/issues/15)).
 
-- Fix the outputs that were originally `FAILED` are marked as `SUCCESS` ([#16](https://github.com/cimau/gossh/issues/16)).
+- Fix the outputs that were originally `FAILED` are marked as `SUCCESS` ([#16](https://github.com/serialt/gosible/issues/16)).
 
 ### Changed
 
-- Optimize log format. For details at [#17](https://github.com/cimau/gossh/issues/17).
+- Optimize log format. For details at [#17](https://github.com/serialt/gosible/issues/17).
 
 ## [1.3.0]
 
 ### Added
 
-- Supports colorful output(that not in json format). For details at [#13](https://github.com/cimau/gossh/issues/13).
+- Supports colorful output(that not in json format). For details at [#13](https://github.com/serialt/gosible/issues/13).
 
 - Add flag `-C/--output.condense` for condensing output and disable colorful.
   It is generally suitable for output to a file to avoid recording color characters(like `^[[35m`).
@@ -361,7 +361,7 @@ Global Flags:
 
 ### Fixed
 
-- Fix bug that output in json format by flag `-j/--output.json` not correct [#12](https://github.com/cimau/gossh/issues/12)
+- Fix bug that output in json format by flag `-j/--output.json` not correct [#12](https://github.com/serialt/gosible/issues/12)
 
 ## [1.2.0]
 
@@ -388,7 +388,7 @@ Global Flags:
 
 ### Fixed
 
-- Fix flag `--timeout.command` does not work in some case. For details at ([#7](https://github.com/cimau/gossh/issues/7)).
+- Fix flag `--timeout.command` does not work in some case. For details at ([#7](https://github.com/serialt/gosible/issues/7)).
 
 ### Changed
 
@@ -398,15 +398,15 @@ Global Flags:
 
 ### Fixed
 
-- Subcommand `config`: fix issue [#8](https://github.com/cimau/gossh/issues/8).
+- Subcommand `config`: fix issue [#8](https://github.com/serialt/gosible/issues/8).
 
-- Fix an issue that sudo command will stuck on remote server when wrong password was provided([#6](https://github.com/cimau/gossh/issues/6)).
+- Fix an issue that sudo command will stuck on remote server when wrong password was provided([#6](https://github.com/serialt/gosible/issues/6)).
 
 ### Changed
 
 - Optimized help information.
 
-- `configs/gossh.yaml`: fixed about issue [#8](https://github.com/cimau/gossh/issues/8).
+- `configs/gossh.yaml`: fixed about issue [#8](https://github.com/serialt/gosible/issues/8).
 
 ## [1.0.1]
 

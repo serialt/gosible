@@ -26,8 +26,8 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"github.com/cimau/gossh/pkg/aes"
-	"github.com/cimau/gossh/pkg/util"
+	"github.com/serialt/gosible/pkg/aes"
+	"github.com/serialt/gosible/pkg/util"
 )
 
 const (
